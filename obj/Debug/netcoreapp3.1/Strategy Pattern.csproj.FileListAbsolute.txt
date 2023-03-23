@@ -1,0 +1,31 @@
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.exe
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.deps.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.runtimeconfig.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.runtimeconfig.dev.json
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.dll
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.pdb
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.csprojAssemblyReference.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.AssemblyInfoInputs.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.AssemblyInfo.cs
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.csproj.CoreCompileInputs.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.RazorTargetAssemblyInfo.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\staticwebassets\Strategy Pattern.StaticWebAssets.Manifest.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\staticwebassets\Strategy Pattern.StaticWebAssets.xml
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.dll
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.pdb
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.genruntimeconfig.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.Views.dll
+C:\Users\ilanr\source\repos\Strategy Pattern\bin\Debug\netcoreapp3.1\Strategy Pattern.Views.pdb
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.RazorAssemblyInfo.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.RazorAssemblyInfo.cs
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.TagHelpers.input.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.TagHelpers.output.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.RazorCoreGenerate.cache
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.RazorTargetAssemblyInfo.cs
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.Views.pdb
+C:\Users\ilanr\source\repos\Strategy Pattern\obj\Debug\netcoreapp3.1\Strategy Pattern.csproj.CopyComplete
