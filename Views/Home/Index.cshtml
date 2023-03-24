@@ -8,8 +8,7 @@
     <meta charset="UTF-8">
     <title>Strategy Pattern</title>
 
-    <link rel="stylesheet" href="Strategy_Pattern.styles.css">
-
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
@@ -40,7 +39,7 @@
             width: 350px;
             height: 450px;
             background-color: #383838;
-            border-radius: 12px;
+            border-radius: 4px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -48,8 +47,8 @@
 
             .box img {
                 width: 100%;
-                border-top-left-radius: 12px;
-                border-top-right-radius: 12px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
             }
 
         .product-details {
@@ -147,6 +146,15 @@
         }
          
 
+        button{
+            cursor: pointer;
+        }
+
+        .disabled{
+            cursor: not-allowed;
+            background: #54a857;
+        }
+
     </style>
 
  
@@ -158,9 +166,9 @@
         @{
             var products = new ProductsModel[]
             {
-                new ProductsModel { Name = "Producto 1", Price = 100, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
-                new ProductsModel { Name = "Producto 2", Price = 200, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
-                new ProductsModel { Name = "Producto 3", Price = 300, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
+                new ProductsModel { Name = "Producto 1", Price = 100.00m, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
+                new ProductsModel { Name = "Producto 2", Price = 200.00m, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
+                new ProductsModel { Name = "Producto 3", Price = 300.00m, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
             };
         }
 
@@ -172,7 +180,11 @@
                     <span>@products[i].Name</span>
                     <span class="price">$@products[i].Price</span>
                 </div>
-                <button class="add" onclick="addCart(@products[i].Price)">Add to cart</button>
+
+                
+                <button class="add btn-@i" data-valor="@Model.OrderTotal" onclick="addCart(@products[i].Price, @i)" type="submit">Add to cart</button>
+                
+                
             </div>
         })
 
@@ -185,6 +197,7 @@
 
             @using (Html.BeginForm("Index", "Home", FormMethod.Post))
             {
+                <input type="hidden" id="OrderTotal" name="OrderTotal" value="@Model.OrderTotal" />
                 @Html.HiddenFor(x => x.OrderTotal)
 
                 <table cellpadding="0" cellspacing="0" class="table">
@@ -220,19 +233,24 @@
         </div>
     </div>
 
-    @section Scripts{
-        <script type="text/javascript">
+    <script type="text/javascript">
+        var cart = 0;
 
-            $(function(){
-                alert("Hola");
-            });
+        function addCart(price, index) {
+            var total = document.querySelector('.total');
+            cart += price;
+            total.textContent = `$${cart}`;
 
-            function addCart(price) {
-                var total = document.getElementById("total");
-                total.innerHTML = price;
-            }
-        </script>
-    }
+            var OrderTotal = document.querySelector('#OrderTotal');
+            OrderTotal.value = cart;
+
+            const btn = document.querySelector(`.btn-${index}`);
+            btn.disabled = true;
+            btn.classList.add('disabled');
+            btn.textContent = 'Added';
+        }
+        
+    </script>
 
     // Editar varible con js
     

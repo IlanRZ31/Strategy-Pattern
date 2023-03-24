@@ -22,9 +22,10 @@ namespace Strategy_Pattern.Properties.Controllers
             var model = GetOrderDetails();
             return View(model);
         }
+        
 
         [HttpPost]
-        public IActionResult Index(CheckoutModel model)
+        public IActionResult Index(CheckoutModel model, decimal OrderTotal)
         {
             model.ShippingMethods = GetShippingMethods();
 
@@ -41,6 +42,7 @@ namespace Strategy_Pattern.Properties.Controllers
                     break;
             }
 
+            model.OrderTotal = OrderTotal;
             model.FinalTotal = _shippingContext.ExecuteStrategy(model.OrderTotal);
 
             return View(model);
@@ -75,6 +77,15 @@ namespace Strategy_Pattern.Properties.Controllers
                 Name="Worldwide Shipping ($50.00)"
             }
         };
+        }
+
+        public IActionResult UpdateOrder(decimal price)
+        {
+            //Actualizar el valor de OrderTotal
+            var model = GetOrderDetails();
+            model.OrderTotal = price;
+            return View(model);
+
         }
     }
 
