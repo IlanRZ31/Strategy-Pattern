@@ -51,7 +51,7 @@ namespace Strategy_Pattern.Properties.Controllers
         {
             var model = new CheckoutModel()
             {
-                OrderTotal = 100.00m,
+                OrderTotal = 0.00m,
                 ShippingMethods = GetShippingMethods()
             };
             return model;

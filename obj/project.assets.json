@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\ilanr\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabox\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilanr\\source\\repos\\Strategy Pattern\\Strategy_Pattern.csproj",
+      "projectUniqueName": "C:\\Users\\Gabox\\Source\\Repos\\Strategy-Pattern\\Strategy_Pattern.csproj",
       "projectName": "Strategy_Pattern",
-      "projectPath": "C:\\Users\\ilanr\\source\\repos\\Strategy Pattern\\Strategy_Pattern.csproj",
-      "packagesPath": "C:\\Users\\ilanr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilanr\\source\\repos\\Strategy Pattern\\obj\\",
+      "projectPath": "C:\\Users\\Gabox\\Source\\Repos\\Strategy-Pattern\\Strategy_Pattern.csproj",
+      "packagesPath": "C:\\Users\\Gabox\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabox\\Source\\Repos\\Strategy-Pattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ilanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabox\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,13 +44,15 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
