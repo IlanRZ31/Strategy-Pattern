@@ -65,3 +65,9 @@ C:\Users\Gabox\Source\Repos\Strategy-Pattern\obj\Debug\netcoreapp3.1\Strategy_Pa
 C:\Users\Gabox\Source\Repos\Strategy-Pattern\obj\Debug\netcoreapp3.1\Strategy_Pattern.genruntimeconfig.cache
 C:\Users\Gabox\Source\Repos\Strategy-Pattern\obj\Debug\netcoreapp3.1\Strategy_Pattern.csproj.CopyComplete
 C:\Users\Gabox\source\repos\Strategy-Pattern\obj\Debug\netcoreapp3.1\Razor\Views\Home\index.cshtml.g.cs
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gabox\source\repos\Strategy-Pattern\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -1,4 +1,5 @@
 ﻿@using Strategy_Pattern
+@using System.Data.SqlClient;
 @model CheckoutModel
 @{
     ViewData["Title"] = "Home Page";
@@ -19,6 +20,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Rubik', sans-serif;
+            color: #fff;
         }
 
         body {
@@ -170,7 +172,28 @@
                 new ProductsModel { Name = "Producto 2", Price = 200.00m, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
                 new ProductsModel { Name = "Producto 3", Price = 300.00m, ImgUrl = "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71v3o0+dWPL.jpg" },
             };
+
+            /*string connectionString = "Data Source=tcp:gbserver-01.database.windows.net,1433;Initial Catalog=Strategy-Pattern;Integrated Security=True"; ;
+            string query = "SELECT * FROM products";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    products = new ProductsModel[]
+                    {
+                        new ProductsModel { Name = reader["Nombre"].ToString(), Price = Convert.ToDecimal(reader["Precio"]), ImgUrl = reader["imgUrl"].ToString() },
+                    };
+                }
+
+                reader.Close();
+            }*/
         }
+
+        
 
         @for (int i = 0; i < products.Length; i++)
         {
@@ -251,8 +274,5 @@
         }
         
     </script>
-
-    // Editar varible con js
-    
 
 </body>
