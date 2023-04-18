@@ -18,9 +18,9 @@
                 <span>Shipping Method</span>
                 
                 <asp:DropDownList ID="shipping" runat="server">
-                    <asp:ListItem Value="free">Free Shipping ($0.00)</asp:ListItem>
-                    <asp:ListItem Value="local">Local Shipping ($10.00)</asp:ListItem>
-                    <asp:ListItem Value="world">Worldwide Shipping ($50.00)</asp:ListItem>
+                    <asp:ListItem Value="Free">Free Shipping ($0.00)</asp:ListItem>
+                    <asp:ListItem Value="Local">Local Shipping ($10.00)</asp:ListItem>
+                    <asp:ListItem Value="World">Worldwide Shipping ($50.00)</asp:ListItem>
                 </asp:DropDownList>
             </div>
             

@@ -7,33 +7,35 @@ namespace StrategyPattern
 {
     public partial class CheckOut : Page
     {
+        private Context _context;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            Context context = new Context(new LocalShippingService());
-            context.Execute();
-
+            _context = new Context();
         }
 
         protected void checkOut(object sender, EventArgs e)
         {
-            switch (shipping.SelectedValue)
+
+            string selectedValue = shipping.SelectedValue;
+            var order = Decimal.Parse(lblTotal.Text);
+
+            switch (selectedValue)
             {
-                case "local":
-                    LocalShippingService local = new LocalShippingService();
-                    decimal total = local.CalculateShipping(100);
-                    lblTotal.Text = total.ToString();
+                case "Free":
+                    _context.SetStrategyAndOrder(new FreeShippingService(), order);
                     break;
-                case "world":
-                    WorldWideShippingService worldWide = new WorldWideShippingService();
-                    decimal total2 = worldWide.CalculateShipping(100);
-                    lblTotal.Text = total2.ToString();
+                case "Local":
+                    _context.SetStrategyAndOrder(new LocalShippingService(), order);
                     break;
-                case "free":
-                    FreeShippingService free = new FreeShippingService();
-                    decimal total3 = free.CalculateShipping(100);
-                    lblTotal.Text = total3.ToString();
+                case "World":
+                    _context.SetStrategyAndOrder(new WorldWideShippingService(), order);
                     break;
             }
+            
+            var response = _context.Execute();
+            lblTotal.Text = response.ToString();
+            
         }
     }
 }
