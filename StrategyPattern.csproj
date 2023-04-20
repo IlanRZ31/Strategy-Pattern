@@ -229,6 +229,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\cart.png" />
+    <Content Include="Content\cart2.png" />
+    <Content Include="Content\Images\cart.jpg" />
+    <Content Include="Content\otherStyle.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />

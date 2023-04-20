@@ -1,0 +1,36 @@
+﻿.box-container{
+    margin-bottom: 120px;
+}
+
+.add{
+    background-color: #528f3c;
+}
+
+.box img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.actionBar{
+    position: fixed;
+}
+
+.slShipping{
+    background-color: #3b3b3b;
+    color: #c8c3b0;
+    border: none;
+}
+
+.details{
+    align-items: center;
+}
+
+.btnCheckOut{
+    width: 300px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #6b6b6b;
+    color: #c2c3bc;
+    margin-top: 30px;
+}

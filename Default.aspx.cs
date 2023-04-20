@@ -38,7 +38,8 @@ namespace StrategyPattern
 
         protected void GoToCheckOut(object sender, EventArgs e)
         {
-            Response.Redirect("CheckOut.aspx");
+            Response.Redirect("CheckOut.aspx?cart=" + totalCart.Text);
         }
+
     }
 }

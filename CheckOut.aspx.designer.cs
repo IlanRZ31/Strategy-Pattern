@@ -15,6 +15,15 @@ namespace StrategyPattern
     {
 
         /// <summary>
+        /// totalCost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label totalCost;
+
+        /// <summary>
         /// shipping control.
         /// </summary>
         /// <remarks>

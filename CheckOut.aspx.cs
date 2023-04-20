@@ -12,6 +12,10 @@ namespace StrategyPattern
         protected void Page_Load(object sender, EventArgs e)
         {
             _context = new Context();
+
+            decimal cart = Convert.ToDecimal(Request.QueryString["cart"]);
+            totalCost.Text = cart.ToString();
+            lblTotal.Text = cart.ToString();
         }
 
         protected void checkOut(object sender, EventArgs e)
