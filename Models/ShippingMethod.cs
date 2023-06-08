@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Strategy_Pattern
+﻿namespace StrategyPattern.Models
 {
-    public class ShippingMethod
+    public abstract class ShippingMethod
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        /*public abstract decimal CalculateShipping(decimal orderTotal);*/
     }
 }
